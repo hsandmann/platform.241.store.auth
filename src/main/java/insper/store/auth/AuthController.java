@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(url = "http://auth:8080")
+@FeignClient(url = "http://auth:8080", value = "auth")
 public interface AuthController {
 
     @PostMapping("/auth/register")
